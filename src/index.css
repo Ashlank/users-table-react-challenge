@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+td {
+  padding: 3px 0;
+}
+
+.colorfull:nth-child(odd) {
+  background: rgb(146, 146, 146);
+}
+
+.colorfull:nth-child(even) {
+  background-color: rgb(189, 189, 189);
 }
