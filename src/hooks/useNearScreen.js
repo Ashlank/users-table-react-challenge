@@ -7,7 +7,6 @@ export default function useNearScreen(fetchMore) {
     if(elementRef.current === undefined) return
 
     const handleIntersection = (entries) => {
-      console.log('intersecting')
       if(entries[0].isIntersecting) {
         fetchMore()
       }
